@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="assets/monki.css" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>dart likes 31</title>
+</head>
+<body onload="script()">
+<div id="app">
+<div id="wrapper">
+<video autoplay loop="loop" preload="true" id="video">
+<source src="assets/monkidrip.mp4" type="video/mp4">
+</video>
+
+<h1 class="glitch" data-text="dart = 31">dart = 31</h1>
+<span class="sub">dart likes 31.</span>
+<h1 class="sub" data-text="."><span>
+<hl class="subcreds">lol.</span>
+</div>
+</div>
+<script>
+        function script() {
+            const vid = document.getElementById("video");
+            vid.click();
+            vid.oncanplaythrough = function() {
+                const promise = vid.play();
+
+                if (promise !== undefined) {
+                    promise.then(_ => {
+                        // Autoplay started!
+                    }).catch(error => {
+                        document.getElementById("wrapper").click();
+                        location.reload();
+                    });
+                }
+
+            };
+
+        }
+    </script>
+</body>
+</html>
