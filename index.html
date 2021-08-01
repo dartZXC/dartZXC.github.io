@@ -1,46 +1,20 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="assets/monki.css" />
-<link rel="icon" type="image/png" href="favicon.png" />
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>dart likes 31</title>
-   <meta content="No he really likes 31." property="og:description">
+    <script src="https://kit.fontawesome.com/1696f1f330.js" crossorigin="anonymous"></script>
+    <script src="./js/particles.js"></script>
+    <script src="./js/jquery.js"></script>
+    <link rel='stylesheet' href='./css/main.css'>
+    <title> =- stop bark! -=</title>
+    <meta content="Stop bark, don't bark, bark is bad." property="og:description">
     <meta name="theme-color" content="#7289DA">
-    <meta content='dart likes 31' property="og:title">
+    <meta content='BARK BARK' property="og:title">
+    <meta content='./images/shibe.jpg' property='og:image'>
 </head>
-<body onload="script()">
-<div id="app">
-<div id="wrapper">
-<video autoplay loop="loop" preload="true" id="video">
-<source src="assets/monkidrip.mp4" type="video/mp4">
-</video>
 
-<h1 class="glitch" data-text="dart = 31">dart = 31</h1>
-<span class="sub">dart likes 31.</span>
-<h1 class="sub" data-text="."><span>
-<hl class="subcreds">lol.</span>
-</div>
-</div>
-<script>
-        function script() {
-            const vid = document.getElementById("video");
-            vid.click();
-            vid.oncanplaythrough = function() {
-                const promise = vid.play();
-
-                if (promise !== undefined) {
-                    promise.then(_ => {
-                        // Autoplay started!
-                    }).catch(error => {
-                        document.getElementById("wrapper").click();
-                        location.reload();
-                    });
-                }
-
-            };
-
-        }
-    </script>
-</body>
-</html>
+<body>
+    <div id="particle-div"></div>
+    <div class='contentsCenter'>
+        <script src='./js/title.js'> </script>
+        <h1 id='Text'>dart=31</h1>
